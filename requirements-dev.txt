@@ -1,0 +1,8 @@
+numpy >= 1.12.1
+six >= 1.11.0
+tensorflow >= 1.4.0
+git+https://github.com/thu-ml/zhusuan.git
+git+https://github.com/korepwx/tfsnippet.git
+
+mock >= 2.0.0
+pytest >= 3.0
