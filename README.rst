@@ -146,7 +146,7 @@ by using `model.vae` directly, for example:
     input_x = ...  # 2-D `float32` :class:`tf.Tensor`, input `x` windows
     input_y = ...  # 2-D `int32` :class:`tf.Tensor`, missing point indicators
                    # for the `x` windows
-    x_r = model.vae.reconstruct(
+    x = model.vae.reconstruct(
         iterative_masked_reconstruct(
             reconstruct=model.vae.reconstruct,
             x=input_x,
@@ -155,8 +155,8 @@ by using `model.vae` directly, for example:
             back_prop=False
         )
     )
-    # `x_r` is a :class:`tfsnippet.stochastic.StochasticTensor`, from which
+    # `x` is a :class:`tfsnippet.stochastic.StochasticTensor`, from which
     # you may derive many useful outputs, for example:
-    x_r.tensor  # the `x` samples
-    x_r.log_prob(group_ndims=0)  # element-wise log p(x|z)
-    x_r.distribution.mean, x_r.distribution.std  # mean and std of p(x|z)
+    x.tensor  # the `x` samples
+    x.log_prob(group_ndims=0)  # element-wise log p(x|z)
+    x.distribution.mean, x.distribution.std  # mean and std of p(x|z)
