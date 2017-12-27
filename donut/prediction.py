@@ -28,9 +28,9 @@ class DonutPredictor(VarScopeObject):
         last_point_only (bool): Whether to obtain the reconstruction
             probability of only the last point in each window?
             (default :obj:`True`)
-        name (str): Optional name of this module
+        name (str): Optional name of this predictor
             (argument of :class:`tfsnippet.utils.VarScopeObject`).
-        scope (str): Optional scope of this module
+        scope (str): Optional scope of this predictor
             (argument of :class:`tfsnippet.utils.VarScopeObject`).
     """
 
