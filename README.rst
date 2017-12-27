@@ -14,11 +14,9 @@ Checkout this repository and execute:
     pip install git+https://github.com/korepwx/tfsnippet.git
     pip install .
 
-This will first install `ZhuSuan`_ and `TFSnippet`_, the two major dependencies
+This will first install `ZhuSuan <https://github.com/thu-ml/zhusuan>`_ and
+`TFSnippet <https://github.com/korepwx/tfsnippet>`_, the two major dependencies
 of Donut, then install the Donut package itself.
-
-_`ZhuSuan`: https://github.com/thu-ml/zhusuan
-_`TFSnippet`: https://github.com/korepwx/tfsnippet
 
 API Usage
 ---------
