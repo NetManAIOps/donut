@@ -162,7 +162,12 @@ class Donut(VarScopeObject):
                 (default :obj:`True`)
 
         Returns:
-            tf.Tensor: The reconstruction probability.
+            tf.Tensor: The reconstruction probability, with the shape
+                ``(len(x) - self.x_dims + 1,)`` if `last_point_only` is
+                :obj:`True`, or ``(len(x) - self.x_dims + 1, self.x_dims)``
+                if `last_point_only` is :obj:`False`.  This is because the
+                first ``self.x_dims - 1`` points are not the last point of
+                any window.
         """
         with tf.name_scope('Donut.get_score'):
             # MCMC missing data imputation
