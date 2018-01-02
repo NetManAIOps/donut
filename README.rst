@@ -158,5 +158,6 @@ by using `model.vae` directly, for example:
     # `x` is a :class:`tfsnippet.stochastic.StochasticTensor`, from which
     # you may derive many useful outputs, for example:
     x.tensor  # the `x` samples
-    x.log_prob(group_ndims=0)  # element-wise log p(x|z)
+    x.log_prob(group_ndims=0)  # element-wise log p(x|z) of sampled x
+    x.distribution.log_prob(input_x)  # the reconstruction probability
     x.distribution.mean, x.distribution.std  # mean and std of p(x|z)

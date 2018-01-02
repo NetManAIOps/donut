@@ -1,9 +1,10 @@
 import numpy as np
-from tfsnippet.utils import docstring_inherit
+from tfsnippet.utils import DocInherit
 
 __all__ = ['DataAugmentation', 'MissingDataInjection']
 
 
+@DocInherit
 class DataAugmentation(object):
     """
     Base class for data augmentation in training.
@@ -85,7 +86,6 @@ class MissingDataInjection(DataAugmentation):
         """Get the ratio of missing points to inject."""
         return self._missing_rate
 
-    @docstring_inherit(DataAugmentation.augment)
     def _augment(self, values, labels, missing):
         inject_y = np.random.binomial(1, self.missing_rate, size=values.shape)
         inject_idx = np.where(inject_y.astype(np.bool))[0]
