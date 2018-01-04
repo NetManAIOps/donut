@@ -64,44 +64,32 @@ To construct a Donut model:
     with tf.variable_scope('model') as model_vs:
         model = Donut(
             h_for_p_x=Sequential([
-                K.layers.Dense(100, W_regularizer=K.regularizers.l2(0.001),
+                K.layers.Dense(100, kernel_regularizer=K.regularizers.l2(0.001),
                                activation=tf.nn.relu),
-                K.layers.Dense(100, W_regularizer=K.regularizers.l2(0.001),
+                K.layers.Dense(100, kernel_regularizer=K.regularizers.l2(0.001),
                                activation=tf.nn.relu),
             ]),
             h_for_q_z=Sequential([
-                K.layers.Dense(100, W_regularizer=K.regularizers.l2(0.001),
+                K.layers.Dense(100, kernel_regularizer=K.regularizers.l2(0.001),
                                activation=tf.nn.relu),
-                K.layers.Dense(100, W_regularizer=K.regularizers.l2(0.001),
+                K.layers.Dense(100, kernel_regularizer=K.regularizers.l2(0.001),
                                activation=tf.nn.relu),
             ]),
             x_dims=120,
             z_dims=5,
         )
 
-To train the Donut model:
+To train the Donut model, and use a trained model for prediction:
 
 .. code-block:: python
 
-    from donut import DonutTrainer
+    from donut import DonutTrainer, DonutPredictor
 
     trainer = DonutTrainer(model=model, model_vs=model_vs)
+    predictor = DonutPredictor(model)
+
     with tf.Session().as_default():
         trainer.fit(train_values, train_labels, train_missing, mean, std)
-
-To use a trained Donut model for prediction:
-
-.. code-block:: python
-
-    from donut import DonutPredictor
-
-    predictor = DonutPredictor(model)
-    with tf.Session().as_default():
-        # Remember to train the model before using the predictor,
-        # or to restore the saved model.
-        ...
-
-        # Now we can use the predictor.
         test_score = predictor.get_score(test_values, test_missing)
 
 To save and restore a trained model:

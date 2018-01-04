@@ -95,6 +95,10 @@ class DonutPredictor(VarScopeObject):
         """
         Get the `reconstruction probability` of specified KPI observations.
 
+        The larger `reconstruction probability`, the less likely a point
+        is anomaly.  You may take the negative of the score, if you want
+        something to directly indicate the severity of anomaly.
+
         Args:
             values (np.ndarray): 1-D float32 array, the KPI observations.
             missing (np.ndarray): 1-D int32 array, the indicator of missing

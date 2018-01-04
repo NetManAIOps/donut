@@ -147,6 +147,10 @@ class Donut(VarScopeObject):
         """
         Get the reconstruction probability for `x` and `y`.
 
+        The larger `reconstruction probability`, the less likely a point
+        is anomaly.  You may take the negative of the score, if you want
+        something to directly indicate the severity of anomaly.
+
         Args:
             x (tf.Tensor): 2-D `float32` :class:`tf.Tensor`, the windows of
                 KPI observations in a mini-batch.
