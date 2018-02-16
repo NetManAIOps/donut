@@ -1,0 +1,521 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{38}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Amer, Goldstein, and Abdennadher}{Amer
+  et~al\mbox{.}}{2013}]%
+        {one-class-svm1}
+\bibfield{author}{\bibinfo{person}{Mennatallah Amer}, \bibinfo{person}{Markus
+  Goldstein}, {and} \bibinfo{person}{Slim Abdennadher}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Enhancing one-class support vector machines for
+  unsupervised anomaly detection}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the ACM SIGKDD Workshop on Outlier Detection and Description}}. ACM,
+  \bibinfo{pages}{8--15}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{An and Cho}{An and Cho}{2015}]%
+        {vae-ad}
+\bibfield{author}{\bibinfo{person}{Jinwon An} {and} \bibinfo{person}{Sungzoon
+  Cho}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Variational Autoencoder based Anomaly
+  Detection using Reconstruction Probability}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{SNU Data
+  Mining Center}. \bibinfo{pages}{1--18} pages.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Beal}{Beal}{2003}]%
+        {variational}
+\bibfield{author}{\bibinfo{person}{Matthew~James Beal}.}
+  \bibinfo{year}{2003}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Variational algorithms for approximate
+  Bayesian inference}}.
+\newblock \bibinfo{publisher}{University of London London}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Bishop}{Bishop}{2006}]%
+        {prml}
+\bibfield{author}{\bibinfo{person}{Christopher~M Bishop}.}
+  \bibinfo{year}{2006}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Pattern recognition and machine learning}}.
+\newblock \bibinfo{publisher}{springer}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Chandola, Banerjee, and Kumar}{Chandola
+  et~al\mbox{.}}{2009}]%
+        {ad-survey}
+\bibfield{author}{\bibinfo{person}{Varun Chandola}, \bibinfo{person}{Arindam
+  Banerjee}, {and} \bibinfo{person}{Vipin Kumar}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Anomaly detection: A survey}.
+\newblock \bibinfo{journal}{\emph{ACM computing surveys (CSUR)}}
+  \bibinfo{volume}{41}, \bibinfo{number}{3} (\bibinfo{year}{2009}),
+  \bibinfo{pages}{15}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Chen, Mahajan, Sridharan, and Zhang}{Chen
+  et~al\mbox{.}}{2013}]%
+        {TSD}
+\bibfield{author}{\bibinfo{person}{Yingying Chen}, \bibinfo{person}{Ratul
+  Mahajan}, \bibinfo{person}{Baskar Sridharan}, {and} \bibinfo{person}{Zhi-Li
+  Zhang}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{A Provider-side View of Web Search Response Time}.
+  In \bibinfo{booktitle}{\emph{Proceedings of the ACM SIGCOMM 2013 Conference
+  on SIGCOMM}} \emph{(\bibinfo{series}{SIGCOMM '13})}.
+  \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{243--254}.
+\newblock
+\showISBNx{978-1-4503-2056-6}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2486001.2486035}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Erfani, Rajasegarar, Karunasekera, and
+  Leckie}{Erfani et~al\mbox{.}}{2016}]%
+        {deep-learning-svm}
+\bibfield{author}{\bibinfo{person}{Sarah~M Erfani}, \bibinfo{person}{Sutharshan
+  Rajasegarar}, \bibinfo{person}{Shanika Karunasekera}, {and}
+  \bibinfo{person}{Christopher Leckie}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{High-dimensional and large-scale anomaly detection
+  using a linear one-class SVM with deep learning}.
+\newblock \bibinfo{journal}{\emph{Pattern Recognition}}  \bibinfo{volume}{58}
+  (\bibinfo{year}{2016}), \bibinfo{pages}{121--134}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Fontugne, Borgnat, Abry, and Fukuda}{Fontugne
+  et~al\mbox{.}}{2010}]%
+        {majority_vote}
+\bibfield{author}{\bibinfo{person}{Romain Fontugne}, \bibinfo{person}{Pierre
+  Borgnat}, \bibinfo{person}{Patrice Abry}, {and} \bibinfo{person}{Kensuke
+  Fukuda}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{MAWILab: Combining Diverse Anomaly Detectors for
+  Automated Anomaly Labeling and Performance Benchmarking}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 6th International COnference}}
+  \emph{(\bibinfo{series}{Co-NEXT '10})}. \bibinfo{publisher}{ACM}, Article
+  \bibinfo{articleno}{8}, \bibinfo{numpages}{12}~pages.
+\newblock
+\showISBNx{978-1-4503-0448-1}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1921168.1921179}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Fu, Hu, and Tan}{Fu et~al\mbox{.}}{2005}]%
+        {cluster}
+\bibfield{author}{\bibinfo{person}{Zhouyu Fu}, \bibinfo{person}{Weiming Hu},
+  {and} \bibinfo{person}{Tieniu Tan}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Similarity based vehicle trajectory clustering and
+  anomaly detection}. In \bibinfo{booktitle}{\emph{Image Processing, 2005. ICIP
+  2005. IEEE International Conference on}}, Vol.~\bibinfo{volume}{2}. IEEE,
+  \bibinfo{pages}{II--602}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Geweke}{Geweke}{1989}]%
+        {geweke1989bayesian}
+\bibfield{author}{\bibinfo{person}{John Geweke}.}
+  \bibinfo{year}{1989}\natexlab{}.
+\newblock \showarticletitle{Bayesian inference in econometric models using
+  Monte Carlo integration}.
+\newblock \bibinfo{journal}{\emph{Econometrica: Journal of the Econometric
+  Society}} (\bibinfo{year}{1989}), \bibinfo{pages}{1317--1339}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gisbert}{Gisbert}{2003}]%
+        {wkde1}
+\bibfield{author}{\bibinfo{person}{Francisco J~Goerlich Gisbert}.}
+  \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{Weighted samples, kernel density estimators and
+  convergence}.
+\newblock \bibinfo{journal}{\emph{Empirical Economics}} \bibinfo{volume}{28},
+  \bibinfo{number}{2} (\bibinfo{year}{2003}), \bibinfo{pages}{335--351}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Goodfellow, Bengio, and Courville}{Goodfellow
+  et~al\mbox{.}}{2016}]%
+        {deep_learning_book}
+\bibfield{author}{\bibinfo{person}{Ian Goodfellow}, \bibinfo{person}{Yoshua
+  Bengio}, {and} \bibinfo{person}{Aaron Courville}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Deep Learning}}.
+\newblock \bibinfo{publisher}{MIT Press}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Goodfellow, Pouget-Abadie, Mirza, Xu,
+  Warde-Farley, Ozair, Courville, and Bengio}{Goodfellow et~al\mbox{.}}{2014}]%
+        {gan}
+\bibfield{author}{\bibinfo{person}{Ian Goodfellow}, \bibinfo{person}{Jean
+  Pouget-Abadie}, \bibinfo{person}{Mehdi Mirza}, \bibinfo{person}{Bing Xu},
+  \bibinfo{person}{David Warde-Farley}, \bibinfo{person}{Sherjil Ozair},
+  \bibinfo{person}{Aaron Courville}, {and} \bibinfo{person}{Yoshua Bengio}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Generative adversarial nets}. In
+  \bibinfo{booktitle}{\emph{Advances in neural information processing
+  systems}}. \bibinfo{pages}{2672--2680}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{H{\"a}rdle, Werwatz, M{\"u}ller, and
+  Sperlich}{H{\"a}rdle et~al\mbox{.}}{2004}]%
+        {wkde2}
+\bibfield{author}{\bibinfo{person}{Wolfgang H{\"a}rdle}, \bibinfo{person}{Axel
+  Werwatz}, \bibinfo{person}{Marlene M{\"u}ller}, {and} \bibinfo{person}{Stefan
+  Sperlich}.} \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{Nonparametric density estimation}.
+\newblock \bibinfo{journal}{\emph{Nonparametric and Semiparametric Models}}
+  (\bibinfo{year}{2004}), \bibinfo{pages}{39--83}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kingma and Ba}{Kingma and Ba}{2014}]%
+        {kingma_adam:_2014}
+\bibfield{author}{\bibinfo{person}{Diederik Kingma} {and}
+  \bibinfo{person}{Jimmy Ba}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Adam: {A} method for stochastic optimization}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1412.6980}}
+  (\bibinfo{year}{2014}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kingma and Welling}{Kingma and
+  Welling}{2014}]%
+        {kingma_auto-encoding_2014}
+\bibfield{author}{\bibinfo{person}{Diederik~P Kingma} {and}
+  \bibinfo{person}{Max Welling}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Auto-{Encoding} {Variational} {Bayes}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the {International} {Conference} on
+  {Learning} {Representations}}}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Knorn and Leith}{Knorn and Leith}{2008}]%
+        {kalman}
+\bibfield{author}{\bibinfo{person}{Florian Knorn} {and}
+  \bibinfo{person}{Douglas~J Leith}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Adaptive kalman filtering for anomaly detection in
+  software appliances}. In \bibinfo{booktitle}{\emph{INFOCOM Workshops 2008,
+  IEEE}}. IEEE, \bibinfo{pages}{1--6}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Krishnamurthy, Sen, Zhang, and
+  Chen}{Krishnamurthy et~al\mbox{.}}{2003}]%
+        {MA}
+\bibfield{author}{\bibinfo{person}{Balachander Krishnamurthy},
+  \bibinfo{person}{Subhabrata Sen}, \bibinfo{person}{Yin Zhang}, {and}
+  \bibinfo{person}{Yan Chen}.} \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{Sketch-based change detection: methods, evaluation,
+  and applications}. In \bibinfo{booktitle}{\emph{Proceedings of the 3rd ACM
+  SIGCOMM conference on Internet measurement}}. ACM, \bibinfo{pages}{234--247}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Laptev, Amizadeh, and Flint}{Laptev
+  et~al\mbox{.}}{2015}]%
+        {egads}
+\bibfield{author}{\bibinfo{person}{Nikolay Laptev}, \bibinfo{person}{Saeed
+  Amizadeh}, {and} \bibinfo{person}{Ian Flint}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Generic and scalable framework for automated
+  time-series anomaly detection}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data
+  Mining}}. ACM, \bibinfo{pages}{1939--1947}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Lavin and Ahmad}{Lavin and Ahmad}{2015}]%
+        {evaluation}
+\bibfield{author}{\bibinfo{person}{Alexander Lavin} {and}
+  \bibinfo{person}{Subutai Ahmad}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Evaluating Real-Time Anomaly Detection
+  Algorithms--The Numenta Anomaly Benchmark}. In
+  \bibinfo{booktitle}{\emph{Machine Learning and Applications (ICMLA), 2015
+  IEEE 14th International Conference on}}. IEEE, \bibinfo{pages}{38--44}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Laxhammar, Falkman, and Sviestins}{Laxhammar
+  et~al\mbox{.}}{2009}]%
+        {GMM}
+\bibfield{author}{\bibinfo{person}{Rikard Laxhammar}, \bibinfo{person}{Goran
+  Falkman}, {and} \bibinfo{person}{Egils Sviestins}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Anomaly detection in sea traffic-a comparison of
+  the gaussian mixture model and the kernel density estimator}. In
+  \bibinfo{booktitle}{\emph{Information Fusion, 2009. FUSION'09. 12th
+  International Conference on}}. IEEE, \bibinfo{pages}{756--763}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Lee, Pei, Hajiaghayi, Pefkianakis, Lu, Yan,
+  Ge, Yates, and Kosseifi}{Lee et~al\mbox{.}}{2012}]%
+        {historical-avg}
+\bibfield{author}{\bibinfo{person}{Suk-Bok Lee}, \bibinfo{person}{Dan Pei},
+  \bibinfo{person}{MohammadTaghi Hajiaghayi}, \bibinfo{person}{Ioannis
+  Pefkianakis}, \bibinfo{person}{Songwu Lu}, \bibinfo{person}{He Yan},
+  \bibinfo{person}{Zihui Ge}, \bibinfo{person}{Jennifer Yates}, {and}
+  \bibinfo{person}{Mario Kosseifi}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Threshold compression for 3g scalable monitoring}.
+  In \bibinfo{booktitle}{\emph{INFOCOM, 2012 Proceedings IEEE}}. IEEE,
+  \bibinfo{pages}{1350--1358}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Liu, Zhao, Xu, Sun, Pei, Luo, Jing, and
+  Feng}{Liu et~al\mbox{.}}{2015}]%
+        {opprentice}
+\bibfield{author}{\bibinfo{person}{Dapeng Liu}, \bibinfo{person}{Youjian Zhao},
+  \bibinfo{person}{Haowen Xu}, \bibinfo{person}{Yongqian Sun},
+  \bibinfo{person}{Dan Pei}, \bibinfo{person}{Jiao Luo},
+  \bibinfo{person}{Xiaowei Jing}, {and} \bibinfo{person}{Mei Feng}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Opprentice: Towards Practical and Automatic Anomaly
+  Detection Through Machine Learning}. In \bibinfo{booktitle}{\emph{Proceedings
+  of the 2015 ACM Conference on Internet Measurement Conference}}
+  \emph{(\bibinfo{series}{IMC '15})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{211--224}.
+\newblock
+\showISBNx{978-1-4503-3848-6}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2815675.2815679}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Lu and Ghorbani}{Lu and Ghorbani}{2009}]%
+        {wavelet}
+\bibfield{author}{\bibinfo{person}{Wei Lu} {and} \bibinfo{person}{Ali~A
+  Ghorbani}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Network anomaly detection based on wavelet
+  analysis}.
+\newblock \bibinfo{journal}{\emph{EURASIP Journal on Advances in Signal
+  Processing}}  \bibinfo{volume}{2009} (\bibinfo{year}{2009}),
+  \bibinfo{pages}{4}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Mahimkar, Ge, Wang, Yates, Zhang, Emmons,
+  Huntley, and Stockert}{Mahimkar et~al\mbox{.}}{2011}]%
+        {svd}
+\bibfield{author}{\bibinfo{person}{Ajay Mahimkar}, \bibinfo{person}{Zihui Ge},
+  \bibinfo{person}{Jia Wang}, \bibinfo{person}{Jennifer Yates},
+  \bibinfo{person}{Yin Zhang}, \bibinfo{person}{Joanne Emmons},
+  \bibinfo{person}{Brian Huntley}, {and} \bibinfo{person}{Mark Stockert}.}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Rapid detection of maintenance induced changes in
+  service performance}. In \bibinfo{booktitle}{\emph{Proceedings of the Seventh
+  COnference on emerging Networking EXperiments and Technologies}}. ACM,
+  \bibinfo{pages}{13}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{M{\"u}nz, Li, and Carle}{M{\"u}nz
+  et~al\mbox{.}}{2007}]%
+        {k-means}
+\bibfield{author}{\bibinfo{person}{Gerhard M{\"u}nz}, \bibinfo{person}{Sa Li},
+  {and} \bibinfo{person}{Georg Carle}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Traffic anomaly detection using k-means
+  clustering}. In \bibinfo{booktitle}{\emph{GI/ITG Workshop MMBnet}}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Nicolau, McDermott, et~al\mbox{.}}{Nicolau
+  et~al\mbox{.}}{2016}]%
+        {kde}
+\bibfield{author}{\bibinfo{person}{Miguel Nicolau}, \bibinfo{person}{James
+  McDermott}, {et~al\mbox{.}}} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{One-Class Classification for Anomaly Detection with
+  Kernel Density Estimation and Genetic Programming}. In
+  \bibinfo{booktitle}{\emph{European Conference on Genetic Programming}}.
+  Springer, \bibinfo{pages}{3--18}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Nielsen and Jensen}{Nielsen and
+  Jensen}{2009}]%
+        {graph}
+\bibfield{author}{\bibinfo{person}{Thomas~Dyhre Nielsen} {and}
+  \bibinfo{person}{Finn~Verner Jensen}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Bayesian networks and decision graphs}}.
+\newblock \bibinfo{publisher}{Springer Science \& Business Media}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Pincombe}{Pincombe}{2005}]%
+        {arma}
+\bibfield{author}{\bibinfo{person}{Brandon Pincombe}.}
+  \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Anomaly detection in time series of graphs using
+  arma processes}.
+\newblock \bibinfo{journal}{\emph{Asor Bulletin}} \bibinfo{volume}{24},
+  \bibinfo{number}{4} (\bibinfo{year}{2005}), \bibinfo{pages}{2}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Rezende, Mohamed, and Wierstra}{Rezende
+  et~al\mbox{.}}{2014}]%
+        {rezende_stochastic_2014}
+\bibfield{author}{\bibinfo{person}{Danilo~Jimenez Rezende},
+  \bibinfo{person}{Shakir Mohamed}, {and} \bibinfo{person}{Daan Wierstra}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Stochastic {Backpropagation} and {Approximate}
+  {Inference} in {Deep} {Generative} {Models}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 31st {International}
+  {Conference} on {International} {Conference} on {Machine} {Learning} -
+  {Volume} 32}} \emph{(\bibinfo{series}{{ICML}'14})}.
+  \bibinfo{publisher}{JMLR.org}, \bibinfo{address}{Beijing, China},
+  \bibinfo{pages}{II--1278--II--1286}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sejnowski and Rosenberg}{Sejnowski and
+  Rosenberg}{1987}]%
+        {sejnowski1987parallel}
+\bibfield{author}{\bibinfo{person}{Terrence~J Sejnowski} {and}
+  \bibinfo{person}{Charles~R Rosenberg}.} \bibinfo{year}{1987}\natexlab{}.
+\newblock \showarticletitle{Parallel networks that learn to pronounce English
+  text}.
+\newblock \bibinfo{journal}{\emph{Complex systems}} \bibinfo{volume}{1},
+  \bibinfo{number}{1} (\bibinfo{year}{1987}), \bibinfo{pages}{145--168}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Shanbhag and Wolf}{Shanbhag and Wolf}{2009}]%
+        {normalization_schema}
+\bibfield{author}{\bibinfo{person}{Shashank Shanbhag} {and}
+  \bibinfo{person}{Tilman Wolf}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Accurate anomaly detection through parallelism}.
+\newblock \bibinfo{journal}{\emph{Network, IEEE}} \bibinfo{volume}{23},
+  \bibinfo{number}{1} (\bibinfo{year}{2009}), \bibinfo{pages}{22--28}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{S{\"o}lch, Bayer, Ludersdorfer, and van~der
+  Smagt}{S{\"o}lch et~al\mbox{.}}{2016}]%
+        {vi-storn}
+\bibfield{author}{\bibinfo{person}{Maximilian S{\"o}lch},
+  \bibinfo{person}{Justin Bayer}, \bibinfo{person}{Marvin Ludersdorfer}, {and}
+  \bibinfo{person}{Patrick van~der Smagt}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Variational inference for on-line anomaly detection
+  in high-dimensional time series}.
+\newblock \bibinfo{journal}{\emph{International Conference on Machine Laerning
+  Anomaly detection Workshop}} (\bibinfo{year}{2016}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sterne, White, Carlin, Spratt, Royston,
+  Kenward, Wood, and Carpenter}{Sterne et~al\mbox{.}}{2009}]%
+        {missing}
+\bibfield{author}{\bibinfo{person}{Jonathan~AC Sterne}, \bibinfo{person}{Ian~R
+  White}, \bibinfo{person}{John~B Carlin}, \bibinfo{person}{Michael Spratt},
+  \bibinfo{person}{Patrick Royston}, \bibinfo{person}{Michael~G Kenward},
+  \bibinfo{person}{Angela~M Wood}, {and} \bibinfo{person}{James~R Carpenter}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Multiple imputation for missing data in
+  epidemiological and clinical research: potential and pitfalls}.
+\newblock \bibinfo{journal}{\emph{Bmj}}  \bibinfo{volume}{338}
+  (\bibinfo{year}{2009}), \bibinfo{pages}{b2393}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wang and Yeung}{Wang and Yeung}{2016}]%
+        {deep-bayes}
+\bibfield{author}{\bibinfo{person}{Hao Wang} {and} \bibinfo{person}{Dit-Yan
+  Yeung}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Towards Bayesian deep learning: A survey}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1604.01662}}
+  (\bibinfo{year}{2016}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{{Xu}, {Chen}, {Zhao}, {Li}, {Bu}, {Li}, {Liu},
+  {Zhao}, {Pei}, {Feng}, {Chen}, {Wang}, and {Qiao}}{{Xu}
+  et~al\mbox{.}}{2018}]%
+        {2018arXiv180203903X}
+\bibfield{author}{\bibinfo{person}{H. {Xu}}, \bibinfo{person}{W. {Chen}},
+  \bibinfo{person}{N. {Zhao}}, \bibinfo{person}{Z. {Li}}, \bibinfo{person}{J.
+  {Bu}}, \bibinfo{person}{Z. {Li}}, \bibinfo{person}{Y. {Liu}},
+  \bibinfo{person}{Y. {Zhao}}, \bibinfo{person}{D. {Pei}}, \bibinfo{person}{Y.
+  {Feng}}, \bibinfo{person}{J. {Chen}}, \bibinfo{person}{Z. {Wang}}, {and}
+  \bibinfo{person}{H. {Qiao}}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{{Unsupervised Anomaly Detection via Variational
+  Auto-Encoder for Seasonal KPIs in Web Applications}}.
+\newblock \bibinfo{journal}{\emph{ArXiv e-prints}} (\bibinfo{date}{Feb.}
+  \bibinfo{year}{2018}).
+\newblock
+\showeprint[arxiv]{cs.LG/1802.03903}
+
+
+\bibitem[\protect\citeauthoryear{Yaacob, Tan, Chien, and Tan}{Yaacob
+  et~al\mbox{.}}{2010}]%
+        {arima}
+\bibfield{author}{\bibinfo{person}{Asrul~H Yaacob}, \bibinfo{person}{Ian~KT
+  Tan}, \bibinfo{person}{Su~Fong Chien}, {and} \bibinfo{person}{Hon~Khi Tan}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Arima based network anomaly detection}. In
+  \bibinfo{booktitle}{\emph{Communication Software and Networks, 2010.
+  ICCSN'10. Second International Conference on}}. IEEE,
+  \bibinfo{pages}{205--209}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Yan, Flavel, Ge, Gerber, Massey, Papadopoulos,
+  Shah, and Yates}{Yan et~al\mbox{.}}{2012}]%
+        {holt-winters}
+\bibfield{author}{\bibinfo{person}{He Yan}, \bibinfo{person}{Ashley Flavel},
+  \bibinfo{person}{Zihui Ge}, \bibinfo{person}{Alexandre Gerber},
+  \bibinfo{person}{Dan Massey}, \bibinfo{person}{Christos Papadopoulos},
+  \bibinfo{person}{Hiren Shah}, {and} \bibinfo{person}{Jennifer Yates}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Argus: End-to-end service anomaly detection and
+  localization from an ISP's point of view}. In
+  \bibinfo{booktitle}{\emph{INFOCOM, 2012 Proceedings IEEE}}. IEEE,
+  \bibinfo{pages}{2756--2760}.
+\newblock
+
+
+\end{thebibliography}
