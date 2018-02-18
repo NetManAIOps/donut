@@ -1,6 +1,7 @@
 \documentclass[sigconf]{acmart}
 
 \usepackage{booktabs} % For formal tables
+\usepackage{balance} % For balancing reference columns
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % begin input file: src/preamble.tex
@@ -156,7 +157,7 @@
 \acmBooktitle{WWW 2018: The 2018 Web Conference, April 23--27, 2018, Lyon, France}
 \acmPrice{}
 \acmDOI{10.1145/3178876.3185996}
-\acmISBN{978-1-4503-5639-8}
+\acmISBN{978-1-4503-5639-8/18/04}
 
 \ifcompact
 \fancyhead{}
@@ -390,7 +391,9 @@ We come up with a novel KDE interpretation of reconstruction for \DONUT{}, makin
 
 
 \stepcounter{footnote}\footnotetext{An implementation of \DONUT{} is published at \url{https://github.com/korepwx/donut}}
+\ifcompact
 \stepcounter{footnote}\footnotetext{A longer version of the paper can be found at \cite{2018arXiv180203903X}.}
+\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % begin input file: src/introduction.tex
@@ -1509,6 +1512,7 @@ We also thank Prof. Jun Zhu and his PhD. student Jiaxin Shi for helpful and cons
 
 \newpage
 \bibliographystyle{ACM-Reference-Format}
+\balance
 \bibliography{references}
 
 \end{document}
