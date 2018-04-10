@@ -6,7 +6,7 @@ DONUT
 .. image:: https://coveralls.io/repos/github/korepwx/donut/badge.svg?branch=master
     :target: https://coveralls.io/github/korepwx/donut?branch=master
 
-Donut is an anomaly detection algorithm for periodic KPIs.
+Donut is an anomaly detection algorithm for seasonal KPIs.
 
 Citation
 --------
