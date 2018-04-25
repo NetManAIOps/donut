@@ -1,11 +1,6 @@
 DONUT
 =====
 
-.. image:: https://travis-ci.org/korepwx/donut.svg?branch=master
-    :target: https://travis-ci.org/korepwx/donut
-.. image:: https://coveralls.io/repos/github/korepwx/donut/badge.svg?branch=master
-    :target: https://coveralls.io/github/korepwx/donut?branch=master
-
 Donut is an anomaly detection algorithm for seasonal KPIs.
 
 This branch is the full version of the WWW 2018 slide, `download link <main.pdf>`_.
