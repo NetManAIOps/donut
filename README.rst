@@ -8,7 +8,7 @@ DONUT
 
 Donut is an anomaly detection algorithm for seasonal KPIs.
 
-This branch is the full version of the WWW 2018 slide.
+This branch is the full version of the WWW 2018 slide, `download link <main.pdf>`_.
 
 Citation
 --------
