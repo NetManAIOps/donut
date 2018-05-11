@@ -1,7 +1,7 @@
 import six
 import numpy as np
 import tensorflow as tf
-from tfsnippet.scaffold import train_loop, TrainLoopContext
+from tfsnippet.scaffold import train_loop, TrainLoop
 from tfsnippet.utils import (VarScopeObject,
                              reopen_variable_scope,
                              get_default_session_or_error,
@@ -257,12 +257,12 @@ class DonutTrainer(VarScopeObject):
 
         # training loop
         lr = self._initial_lr
-        with train_loop(
+        with TrainLoop(
                 param_vars=self._train_params,
                 early_stopping=True,
                 summary_dir=summary_dir,
                 max_epoch=self._max_epoch,
-                max_step=self._max_step) as loop:  # type: TrainLoopContext
+                max_step=self._max_step) as loop:  # type: TrainLoop
             loop.print_training_summary()
 
             for epoch in loop.iter_epochs():
