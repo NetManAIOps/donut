@@ -37,7 +37,7 @@ class DonutTrainer(VarScopeObject):
             (default 0.01)
         use_regularization_loss (bool): Whether or not to add regularization
             loss from `tf.GraphKeys.REGULARIZATION_LOSSES` to the training
-            objective? (default :obj:`True`)
+            loss? (default :obj:`True`)
         max_epoch (int or None): Maximum epochs to run.  If :obj:`None`,
             will not stop at any particular epoch. (default 256)
         max_step (int or None): Maximum steps to run.  If :obj:`None`,
@@ -122,7 +122,7 @@ class DonutTrainer(VarScopeObject):
 
             # compose the training loss
             with tf.name_scope('loss'):
-                loss = model.get_training_objective(
+                loss = model.get_training_loss(
                     x=self._input_x, y=self._input_y, n_z=n_z)
                 if use_regularization_loss:
                     loss += tf.losses.get_regularization_loss()

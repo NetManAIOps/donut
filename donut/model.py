@@ -1,3 +1,5 @@
+import warnings
+
 import tensorflow as tf
 from tensorflow import keras as K
 from tfsnippet.distributions import Normal
@@ -17,13 +19,13 @@ class Donut(VarScopeObject):
     """
     Class for constructing Donut model.
 
-    This class provides :meth:`get_training_objective` for deriving the
+    This class provides :meth:`get_training_loss` for deriving the
     training loss :class:`tf.Tensor`, and :meth:`get_score` for obtaining
     the reconstruction probability :class:`tf.Tensor`.
 
     Note:
         :class:`Donut` instances will not build the computation graph
-        until :meth:`get_training_objective` or :meth:`get_score` is
+        until :meth:`get_training_loss` or :meth:`get_score` is
         called.  This suggests that a :class:`donut.DonutTrainer` or
         a :class:`donut.DonutPredictor` must have been constructed
         before saving or restoring the model parameters.
@@ -108,9 +110,9 @@ class Donut(VarScopeObject):
         """
         return self._vae
 
-    def get_training_objective(self, x, y, n_z=None):
+    def get_training_loss(self, x, y, n_z=None):
         """
-        Get the training objective for `x` and `y`.
+        Get the training loss for `x` and `y`.
 
         Args:
             x (tf.Tensor): 2-D `float32` :class:`tf.Tensor`, the windows of
@@ -122,10 +124,10 @@ class Donut(VarScopeObject):
                 dimension)
 
         Returns:
-            tf.Tensor: The training objective, which can be optimized by
-                gradient descent algorithms.
+            tf.Tensor: 0-d tensor, the training loss, which can be optimized
+                by gradient descent algorithms.
         """
-        with tf.name_scope('Donut.training_objective'):
+        with tf.name_scope('Donut.training_loss'):
             chain = self.vae.chain(x, n_z=n_z)
             x_log_prob = chain.model['x'].log_prob(group_ndims=0)
             alpha = tf.cast(1 - y, dtype=tf.float32)
@@ -141,6 +143,11 @@ class Donut(VarScopeObject):
             )
             loss = tf.reduce_mean(vi.training.sgvb())
             return loss
+
+    def get_training_objective(self, *args, **kwargs):  # pragma: no cover
+        warnings.warn('`get_training_objective` is deprecated, use '
+                      '`get_training_loss` instead.', DeprecationWarning)
+        return self.get_training_loss(*args, **kwargs)
 
     def get_score(self, x, y=None, n_z=None, mcmc_iteration=None,
                   last_point_only=True):

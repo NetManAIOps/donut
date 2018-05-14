@@ -67,7 +67,7 @@ class ModelTestCase(tf.test.TestCase):
                 ValueError, match='`z_dims` must be a positive integer'):
             _ = Donut(lambda x: x, lambda x: x, x_dims=1, z_dims=object())
 
-    def test_training_objective(self):
+    def test_training_loss(self):
         class Capture(object):
             def __init__(self, vae):
                 self._vae = vae
@@ -105,13 +105,13 @@ class ModelTestCase(tf.test.TestCase):
             std_epsilon=0.125,
         )
         capture = Capture(donut.vae)
-        _ = donut.get_training_objective(x, y)  # ensure model is built
+        _ = donut.get_training_loss(x, y)  # ensure model is built
 
-        # training objective with n_z is None
+        # training loss with n_z is None
         with self.test_session() as sess:
             ensure_variables_initialized()
 
-            loss = donut.get_training_objective(x, y)
+            loss = donut.get_training_loss(x, y)
             np.testing.assert_equal(capture.q_net['z'].eval(),
                                     np.arange(12).reshape([4, 3]))
             p_net = donut.vae.model(z=capture.q_net['z'], x=x)
@@ -125,11 +125,11 @@ class ModelTestCase(tf.test.TestCase):
             loss2 = -tf.reduce_mean(sgvb)
             np.testing.assert_allclose(*sess.run([loss, loss2]))
 
-        # training objective with n_z > 1
+        # training loss with n_z > 1
         with self.test_session() as sess:
             ensure_variables_initialized()
 
-            loss = donut.get_training_objective(x, y, n_z=7)
+            loss = donut.get_training_loss(x, y, n_z=7)
             np.testing.assert_equal(capture.q_net['z'].eval(),
                                     np.arange(84).reshape([7, 4, 3]))
             p_net = donut.vae.model(z=capture.q_net['z'], x=x, n_z=7)
