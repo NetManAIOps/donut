@@ -1,10 +1,10 @@
 DONUT
 =====
 
-.. image:: https://travis-ci.org/korepwx/donut.svg?branch=master
-    :target: https://travis-ci.org/korepwx/donut
-.. image:: https://coveralls.io/repos/github/korepwx/donut/badge.svg?branch=master
-    :target: https://coveralls.io/github/korepwx/donut?branch=master
+.. image:: https://travis-ci.org/haowen-xu/donut.svg?branch=master
+    :target: https://travis-ci.org/haowen-xu/donut
+.. image:: https://coveralls.io/repos/github/haowen-xu/donut/badge.svg?branch=master
+    :target: https://coveralls.io/github/haowen-xu/donut?branch=master
 
 Donut is an anomaly detection algorithm for seasonal KPIs.
 
@@ -29,11 +29,11 @@ Checkout this repository and execute:
 .. code-block:: bash
 
     pip install git+https://github.com/thu-ml/zhusuan.git
-    pip install git+https://github.com/korepwx/tfsnippet.git
+    pip install git+https://github.com/haowen-xu/tfsnippet.git
     pip install .
 
 This will first install `ZhuSuan <https://github.com/thu-ml/zhusuan>`_ and
-`TFSnippet <https://github.com/korepwx/tfsnippet>`_, the two major dependencies
+`TFSnippet <https://github.com/haowen-xu/tfsnippet>`_, the two major dependencies
 of Donut, then install the Donut package itself.
 
 API Usage

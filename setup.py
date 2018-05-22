@@ -39,10 +39,10 @@ install_requires = [s for s in requirements_list if not s.startswith('git+')]
 setup(
     name='Donut',
     version=version,
-    url='https://github.com/korepwx/donut/',
+    url='https://github.com/haowen-xu/donut/',
     license='MIT',
     author='Haowen Xu',
-    author_email='public@korepwx.com',
+    author_email='haowen.xu@outlook.com',
     description='Donut is an anomaly detection algorithm for periodic KPIs.',
     long_description=__doc__,
     packages=find_packages('.', include=['donut', 'donut.*']),

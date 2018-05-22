@@ -9,7 +9,7 @@ env:
   - PYTHON_VERSION=2 TENSORFLOW_VERSION=1.8
   - PYTHON_VERSION=3 TENSORFLOW_VERSION=1.8
 install:
-  - docker pull "ipwx/travis-tensorflow-docker:py${PYTHON_VERSION}tf${TENSORFLOW_VERSION}"
+  - docker pull "haowenxu/travis-tensorflow-docker:py${PYTHON_VERSION}tf${TENSORFLOW_VERSION}"
 script:
   - docker run
       -v "$(pwd)":"$(pwd)"
@@ -17,5 +17,5 @@ script:
       -e TRAVIS="${TRAVIS}"
       -e TRAVIS_JOB_ID="${TRAVIS_JOB_ID}"
       -e TRAVIS_BRANCH="${TRAVIS_BRANCH}"
-      "ipwx/travis-tensorflow-docker:py${PYTHON_VERSION}tf${TENSORFLOW_VERSION}"
+      "haowenxu/travis-tensorflow-docker:py${PYTHON_VERSION}tf${TENSORFLOW_VERSION}"
       bash -c "pip install -r requirements-dev.txt && coverage run -m py.test && coveralls"
