@@ -21,6 +21,11 @@ Citation
         Year = {2018}
     }
 
+Dependencies
+------------
+
+TensorFlow >= 1.5
+
 Installation
 ------------
 
