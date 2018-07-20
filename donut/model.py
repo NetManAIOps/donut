@@ -1,9 +1,9 @@
 import warnings
+from functools import partial
 
 import tensorflow as tf
-from tensorflow import keras as K
 from tfsnippet.distributions import Normal
-from tfsnippet.modules import VAE, Sequential, DictMapper, Module
+from tfsnippet.modules import VAE, Lambda, Module
 from tfsnippet.stochastic import validate_n_samples
 from tfsnippet.utils import (VarScopeObject,
                              reopen_variable_scope,
@@ -13,6 +13,19 @@ from tfsnippet.variational import VariationalInference
 from .reconstruction import iterative_masked_reconstruct
 
 __all__ = ['Donut']
+
+
+def softplus_std(inputs, units, epsilon, name):
+    return tf.nn.softplus(tf.layers.dense(inputs, units, name=name)) + epsilon
+
+
+def wrap_params_net(inputs, h_for_dist, mean_layer, std_layer):
+    with tf.variable_scope('hidden'):
+        h = h_for_dist(inputs)
+    return {
+        'mean': mean_layer(h),
+        'std': std_layer(h),
+    }
 
 
 class Donut(VarScopeObject):
@@ -56,36 +69,34 @@ class Donut(VarScopeObject):
                 p_z=Normal(mean=tf.zeros([z_dims]), std=tf.ones([z_dims])),
                 p_x_given_z=Normal,
                 q_z_given_x=Normal,
-                h_for_p_x=Sequential([
-                    h_for_p_x,
-                    DictMapper(
-                        {
-                            'mean': K.layers.Dense(x_dims),
-                            'std': lambda x: (
-                                std_epsilon + K.layers.Dense(
-                                    x_dims,
-                                    activation=tf.nn.softplus
-                                )(x)
-                            )
-                        },
-                        name='p_x_given_z'
-                    )
-                ]),
-                h_for_q_z=Sequential([
-                    h_for_q_z,
-                    DictMapper(
-                        {
-                            'mean': K.layers.Dense(z_dims),
-                            'std': lambda z: (
-                                std_epsilon + K.layers.Dense(
-                                    z_dims,
-                                    activation=tf.nn.softplus
-                                )(z)
-                            )
-                        },
-                        name='q_z_given_x'
-                    )
-                ]),
+                h_for_p_x=Lambda(
+                    partial(
+                        wrap_params_net,
+                        h_for_dist=h_for_p_x,
+                        mean_layer=partial(
+                            tf.layers.dense, units=x_dims, name='x_mean'
+                        ),
+                        std_layer=partial(
+                            softplus_std, units=x_dims, epsilon=std_epsilon,
+                            name='x_std'
+                        )
+                    ),
+                    name='p_x_given_z'
+                ),
+                h_for_q_z=Lambda(
+                    partial(
+                        wrap_params_net,
+                        h_for_dist=h_for_q_z,
+                        mean_layer=partial(
+                            tf.layers.dense, units=z_dims, name='z_mean'
+                        ),
+                        std_layer=partial(
+                            softplus_std, units=z_dims, epsilon=std_epsilon,
+                            name='z_std'
+                        )
+                    ),
+                    name='q_z_given_x'
+                )
             )
         self._x_dims = x_dims
         self._z_dims = z_dims

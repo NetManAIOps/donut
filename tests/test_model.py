@@ -40,17 +40,19 @@ class ModelTestCase(tf.test.TestCase):
 
         x = tf.reshape(tf.range(20, dtype=tf.float32), [4, 5])
         _ = donut1.get_score(x)
+        _ = donut1.get_score(x)
+        _ = donut2.get_score(x)
         _ = donut2.get_score(x)
         self.assertListEqual(
             sorted(get_variables_as_dict()),
-            ['get_donut/donut/p_x_given_z/mean/dense/bias',
-             'get_donut/donut/p_x_given_z/mean/dense/kernel',
-             'get_donut/donut/p_x_given_z/std/dense/bias',
-             'get_donut/donut/p_x_given_z/std/dense/kernel',
-             'get_donut/donut/q_z_given_x/mean/dense/bias',
-             'get_donut/donut/q_z_given_x/mean/dense/kernel',
-             'get_donut/donut/q_z_given_x/std/dense/bias',
-             'get_donut/donut/q_z_given_x/std/dense/kernel']
+            ['get_donut/donut/p_x_given_z/x_mean/bias',
+             'get_donut/donut/p_x_given_z/x_mean/kernel',
+             'get_donut/donut/p_x_given_z/x_std/bias',
+             'get_donut/donut/p_x_given_z/x_std/kernel',
+             'get_donut/donut/q_z_given_x/z_mean/bias',
+             'get_donut/donut/q_z_given_x/z_mean/kernel',
+             'get_donut/donut/q_z_given_x/z_std/bias',
+             'get_donut/donut/q_z_given_x/z_std/kernel']
         )
 
     def test_error_construction(self):

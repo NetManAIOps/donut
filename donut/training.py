@@ -1,7 +1,7 @@
 import six
 import numpy as np
 import tensorflow as tf
-from tfsnippet.scaffold import train_loop, TrainLoop
+from tfsnippet.scaffold import TrainLoop
 from tfsnippet.utils import (VarScopeObject,
                              reopen_variable_scope,
                              get_default_session_or_error,
@@ -158,8 +158,10 @@ class DonutTrainer(VarScopeObject):
                     grad_vars.append((grad, var))
 
             # build the training op
-            self._train_op = self._optimizer.apply_gradients(
-                grad_vars, global_step=self._global_step)
+            with tf.control_dependencies(
+                    tf.get_collection(tf.GraphKeys.UPDATE_OPS)):
+                self._train_op = self._optimizer.apply_gradients(
+                    grad_vars, global_step=self._global_step)
 
             # the training summary in case `summary_dir` is specified
             with tf.name_scope('summary'):
