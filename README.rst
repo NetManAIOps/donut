@@ -14,11 +14,12 @@ Citation
 .. code-block:: bibtex
 
     @inproceedings{donut,
-        Author = {Haowen, Xu and Wenxiao, Chen and Nengwen, Zhao and Zeyan, Li and Jiahao, Bu and Zhihan, Li and Ying, Liu and Youjian, Zhao and Dan, Pei and Yang, Feng and Jie, Chen and Zhaogang, Wang and Honglin, Qiao},
-        Booktitle = {Proceedings of 27th World Wide Web conference},
-        Organization = {ACM},
-        Title = {Unsupervised Anomaly Detection via Variational Auto-Encoder for Seasonal KPIs in Web Applications},
-        Year = {2018}
+      title={Unsupervised Anomaly Detection via Variational Auto-Encoder for Seasonal KPIs in Web Applications},
+      author={Xu, Haowen and Chen, Wenxiao and Zhao, Nengwen and Li, Zeyan and Bu, Jiahao and Li, Zhihan and Liu, Ying and Zhao, Youjian and Pei, Dan and Feng, Yang and others},
+      booktitle={Proceedings of the 2018 World Wide Web Conference on World Wide Web},
+      pages={187--196},
+      year={2018},
+      organization={International World Wide Web Conferences Steering Committee}
     }
 
 Dependencies
