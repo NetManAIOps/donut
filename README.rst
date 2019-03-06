@@ -35,7 +35,7 @@ Checkout this repository and execute:
 .. code-block:: bash
 
     pip install git+https://github.com/thu-ml/zhusuan.git
-    pip install git+https://github.com/haowen-xu/tfsnippet.git@v0.1
+    pip install git+https://github.com/haowen-xu/tfsnippet.git@v0.1.2
     pip install .
 
 This will first install `ZhuSuan <https://github.com/thu-ml/zhusuan>`_ and

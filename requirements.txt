@@ -1,4 +1,4 @@
 numpy >= 1.12.1
 six >= 1.11.0
 git+https://github.com/thu-ml/zhusuan.git
-git+https://github.com/haowen-xu/tfsnippet.git@v0.1
+git+https://github.com/haowen-xu/tfsnippet.git@v0.1.2
